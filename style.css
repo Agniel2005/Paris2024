@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.navbar ul{
+    width: 70vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    gap:15px;
+    line-height: 24px;
+}
+.navbar img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.navbar a:hover{
+    border-bottom: 2px solid rgb(17, 154, 196);
+}
+.logotipo {
+    background: url("https://img.olympics.com/images/image/private/t_16-9_1280/f_auto/primary/ufiinqivfn8ig30anqpe") no-repeat;
+    background-size:cover;
+    width: 99vw;
+    aspect-ratio: 3/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+}
+.infoLogitipo img{
+    width: 30vw;
+    display: flex;
+    
+}
+main{
+    margin-inline: 10%;
+}
+section div{
+    display: flex;
+    flex-direction: row;
+}
+.imgMod{
+    width: 50%;
+}
+.imgMod img{
+    -webkit-clip-path: circle(61.6% at 74% 58%);
+    clip-path: circle(61.6% at 74% 58%);
+    
+}
