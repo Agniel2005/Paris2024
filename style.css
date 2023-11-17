@@ -39,6 +39,8 @@ a {
 .navbar a:hover{
     border-bottom: 2px solid rgb(17, 154, 196);
 }
+/*logo central*/
+
 .logotipo {
     background: url("https://img.olympics.com/images/image/private/t_16-9_1280/f_auto/primary/ufiinqivfn8ig30anqpe") no-repeat;
     background-size:cover;
@@ -55,13 +57,23 @@ a {
     display: flex;
     
 }
+/*artigos*/
 main{
+    margin-top: 5%;
     margin-inline: 10%;
 }
+section{
+    height: 100%;
+    
+}
 section div{
+    text-align: justify;
+    background-color: white;
     display: flex;
     flex-direction: row;
+    
 }
+/*poliformismo*/
 .imgMod{
     width: 50%;
 }
@@ -69,4 +81,22 @@ section div{
     -webkit-clip-path: circle(61.6% at 74% 58%);
     clip-path: circle(61.6% at 74% 58%);
     
+}
+
+/*botoes*/
+.lermais{
+    transition: all 0.3s;
+    margin-top: 5%;
+    padding: 5px;
+    border: none;
+    background-color: rgb(18, 144, 202);
+    color: white;
+    box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
+}
+.lermais:hover{
+    background-color: skyblue;
+    cursor: pointer;
+    transform: scale(1.1);
 }
