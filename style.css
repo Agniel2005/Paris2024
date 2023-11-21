@@ -71,13 +71,13 @@ hr.dashed {
     
 }
 /*artigos*/
+
 main{
     margin-top: 5%;
     margin-inline: 20%;
 }
 section{
     height: 100%;
-    
 }
 section div{
     text-align: justify;
@@ -95,7 +95,7 @@ section div{
 
 .normal img{
     -webkit-clip-path: circle(80.8% at 86% 25%);
-clip-path: circle(80.8% at 86% 25%);
+    clip-path: circle(80.8% at 86% 25%);
 }
 .inverted{
     flex-direction: row-reverse;
@@ -123,5 +123,12 @@ clip-path: circle(80.8% at 86% 25%);
     transform: scale(1.1);
 }
 
+/*footer*/
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 50px;
+}
 
 
