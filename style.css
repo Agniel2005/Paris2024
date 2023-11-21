@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Sans-serif;
 }
 
 ul {
@@ -30,6 +31,12 @@ a {
     gap:15px;
     line-height: 24px;
 }
+
+hr.dashed {
+    border-top: 3px dashed rgb(211, 211, 211);
+}
+
+
 .navbar img{
     display: flex;
     align-items: center;
@@ -51,16 +58,22 @@ a {
     justify-content: center;
     flex-direction: column;
     z-index: -1;
+    box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
 }
+
 .infoLogitipo img{
     width: 30vw;
     display: flex;
+
+
     
 }
 /*artigos*/
 main{
     margin-top: 5%;
-    margin-inline: 10%;
+    margin-inline: 20%;
 }
 section{
     height: 100%;
@@ -71,16 +84,25 @@ section div{
     background-color: white;
     display: flex;
     flex-direction: row;
+    padding: 2%;
     
 }
+
 /*poliformismo*/
 .imgMod{
     width: 50%;
 }
-.imgMod img{
-    -webkit-clip-path: circle(61.6% at 74% 58%);
-    clip-path: circle(61.6% at 74% 58%);
-    
+
+.normal img{
+    -webkit-clip-path: circle(80.8% at 86% 25%);
+clip-path: circle(80.8% at 86% 25%);
+}
+.inverted{
+    flex-direction: row-reverse;
+}
+.inverted img{
+    -webkit-clip-path: circle(80.8% at 17% 28%);
+    clip-path: circle(80.8% at 17% 28%);
 }
 
 /*botoes*/
@@ -100,3 +122,6 @@ section div{
     cursor: pointer;
     transform: scale(1.1);
 }
+
+
+
