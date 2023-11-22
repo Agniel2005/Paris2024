@@ -1,0 +1,23 @@
+
+.logotipo {
+    background: url(../imagens/fundoJogos.jpg);
+    background-size:contain;
+    width: 99vw;
+    aspect-ratio: 3/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: -1;
+    box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
+    -moz-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
+}
+article p{
+    text-align: justify;
+    margin-top: 3%;
+}
+main{
+    margin-top: 10px;
+    margin-inline: 15%;
+}
