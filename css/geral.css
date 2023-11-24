@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: Sans-serif;
 }
-
+:root{
+    --corborda: rgb(211, 211, 211);
+    --corSubBordaNav:rgb(17, 154, 196);
+}
 ul {
     list-style: none;
 }
@@ -33,7 +36,7 @@ a {
 }
 
 hr.dashed {
-    border-top: 3px dashed rgb(211, 211, 211);
+    border-top: 3px dashed var(--corborda);
 }
 
 
@@ -44,7 +47,7 @@ hr.dashed {
     width: 100%;
 }
 .navbar a:hover{
-    border-bottom: 2px solid rgb(17, 154, 196);
+    border-bottom: 2px solid var(--corSubBordaNav);
 }
 
 /*logo central*/
