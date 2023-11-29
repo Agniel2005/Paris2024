@@ -1,7 +1,7 @@
 .logotipo {
     background: url(../imagens/fundoCultura.jpg) no-repeat;
     background-size:cover;
-    width: 100%;
+    width: 99vw;
     aspect-ratio: 3/2;
     display: flex;
     align-items: center;
@@ -12,27 +12,99 @@
     -webkit-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
     -moz-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
 }
+main{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-inline: 5%;
+}
 .hidden{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-article > div{
-    background-color: aqua;
-
-    padding: 15px;
-    width: 30%;
-    border-radius: 10px;
-
-    
+.intro{
+    display: block;
+}
+.grid-container p,.grid-container h3{
+    height: 45px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     
 }
+.grid-container > div{
+    box-sizing: border-box;
+    width: 25vw;
+    padding: 15px;
+    max-width: 350px;
+    min-width: 200px;
+    width: 30%;
+    margin: 10px;   
+    margin-bottom: 5px;
+
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.548);
+    
+}
+
+article div img{
+    width: 100%;
+}
 .revelador{
+    
+    transition: all 0.3s;
     background-color: rgb(13, 228, 13);
     padding: 5px;
     border: none;
+    margin-top: 5px;
 }
-div img{
-    width: 100%;
-    aspect-ratio: 3/2;
+.revelador:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.blur{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Define a cor de fundo com transparência */
+    z-index: 9999;
+}
+
+.popup{
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    aspect-ratio: 2/2.5;
+    border-radius: 5%;
+    padding: 25px;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    grid-template-rows:2fr 5fr 2fr;
+    text-align: justify;
+    font-size: 1.15rem;
+}
+
+
+@media screen and (max-width:700px) {
+    .intro{
+        font-size: 1.25rem;
+    }
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:450px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
 }
