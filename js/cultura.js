@@ -21,3 +21,7 @@ function fecharPopup(){
     document.querySelector('.blur').remove()
 }
 btn_revelar.forEach(btn => btn.addEventListener("click",mostrarConteudo))
+window.addEventListener("keyup",function(e){
+    console.log(e.key)
+    if (e.key == "Escape") fecharPopup();
+})
