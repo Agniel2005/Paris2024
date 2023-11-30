@@ -1,7 +1,7 @@
 .logotipo {
     background: url(../imagens/fundoCultura.jpg) no-repeat;
     background-size:cover;
-    width: 99vw;
+    width: 100%;
     aspect-ratio: 3/2;
     display: flex;
     align-items: center;
@@ -22,9 +22,7 @@ main{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.intro{
-    display: block;
-}
+
 .grid-container p,.grid-container h3{
     height: 45px;
 }
