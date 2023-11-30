@@ -23,7 +23,7 @@ main{
 }
 
 .navbar{
-    padding: 10px;
+    padding: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@ hr.dashed {
     justify-content: center;
     width: 100%;
 }
-.navbar a:hover{
+.navbar a:hover, .navbar img:hover{
     border-bottom: 2px solid var(--corSubBordaNav);
 }
 
@@ -66,6 +66,7 @@ hr.dashed {
     justify-content: center;
     flex-direction: column;
     z-index: -1;
+    margin-top:0;
     box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
     -webkit-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
     -moz-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
@@ -147,5 +148,10 @@ footer{
 @media screen and (max-width:700px) {
     .redes_container{
         width: 90%;
+    }   
+}
+@media screen and (min-width:1500px) {
+    .logotipo{
+        aspect-ratio:5/4;
     }
 }
