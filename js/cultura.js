@@ -1,4 +1,4 @@
-let btn_revelar = document.querySelectorAll(".revelador")
+let btn_revelar = document.querySelectorAll(".lermais")
 let body = document.querySelector("body");
 
 function mostrarConteudo(){
@@ -11,7 +11,7 @@ function mostrarConteudo(){
     content.innerHTML=`
         <h3>${this.parentElement.querySelector('h3').textContent}</h3>
         <p>${this.parentElement.querySelector('p').textContent}</p>
-        <button class="revelador" onclick="fecharPopup()">Fechar</button>
+        <button class="lermais" onclick="fecharPopup()">Fechar</button>
     ` ;
 
     body.appendChild(blur)

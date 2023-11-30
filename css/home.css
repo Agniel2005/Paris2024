@@ -42,22 +42,7 @@ article p{
 }
 
 /*botoes*/
-.lermais{
-    transition: all 0.3s;
-    margin-top: 5%;
-    padding: 5px;
-    border: none;
-    background-color: rgb(18, 144, 202);
-    color: white;
-    box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
-    -webkit-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
-    -moz-box-shadow: 5px 1px 11px -1px rgba(0,0,0,0.39);
-}
-.lermais:hover{
-    background-color: skyblue;
-    cursor: pointer;
-    transform: scale(1.1);
-}
+
 
 
 

@@ -51,18 +51,6 @@ main{
 article div img{
     width: 100%;
 }
-.revelador{
-    
-    transition: all 0.3s;
-    background-color: rgb(13, 228, 13);
-    padding: 5px;
-    border: none;
-    margin-top: 5px;
-}
-.revelador:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-}
 
 .blur{
     display: block;
