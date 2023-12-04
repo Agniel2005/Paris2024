@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/geral.css">
+    <link rel="stylesheet" href="../css/paris.css">
+    <title>Olimpíadas</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="../htmls/paris.html">Paris</a>
+                </li>
+
+                <li>
+                    <a href="../htmls/jogos.html">Jogos</a>
+                </li>
+
+                <li>
+                    <a href="../index.html">
+                        <img src="..\imagens\logo_color.svg" alt="Logo das Olimpíadas">
+                    </a>                
+                </li>
+
+                <li>
+                    <a href="../htmls/cultura.html">Cultura</a>
+                </li>
+
+                <li>
+                    <a href="../htmls/Olimpiadas.html">Olimpíadas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="logotipo">
+        <div class="infoLogitipo">
+            <img src="../imagens/Logofogo.png" alt="Imagem de logo das Olimpíadas">
+        </div>
+    </section>
+
+    <main>
+    <section class="conteudo">
+        <article>
+            <h2>
+                Sobre Paris
+            </h2>
+        <div class="form">
+            <img src="../imagens/paris100.webp" class="imagem-sobre">
+            <p class="text-sobre">
+                Paris, a deslumbrante capital da França, não apenas se destaca como a cidade mais populosa do país, mas também é reconhecida como um dos destinos mais emblemáticos e românticos do mundo. Banhada pelo majestoso rio Sena, Paris é conhecida por sua arquitetura icônica, que inclui monumentos como a Torre Eiffel, o Museu do Louvre e a Catedral de Notre-Dame.<br>
+                Além de sua rica história e cultura, Paris é um centro global para as artes, moda e gastronomia. A cidade abriga alguns dos museus mais renomados, como o Louvre, que abriga a famosa Mona Lisa, e o Musée d'Orsay, dedicado à arte impressionista. Os Champs-Élysées, uma das avenidas mais famosas do mundo, é um paraíso para os amantes das compras, repleto de butiques elegantes e lojas de grife.<br>
+                A atmosfera romântica de Paris é acentuada pelos charmosos cafés e brasseries que pontuam suas ruas, oferecendo a oportunidade de desfrutar da culinária francesa mundialmente famosa. Os parisienses são conhecidos por seu estilo de vida sofisticado e apreciação pela arte de viver bem.<br>
+                Além disso, a cidade é um importante centro econômico e financeiro, contribuindo significativamente para a influência global da França. Com seus parques encantadores, como o Jardim de Luxemburgo, e eventos culturais vibrantes, Paris continua a atrair milhões de visitantes anualmente, encantando-os com sua beleza atemporal e seu charme inigualável.
+            </p>
+        </div>
+        </article>
+    </section>
+    
+    <section class="conteudo">
+        <article>
+            <h2>
+                Lugares que você não pode deixar de visitar quando você ir para Paris
+            </h2>
+            <div class="container">
+            <button class="carousel-arrow carousel-arrow--prev" onclick="handleCarouselMove(false)">
+                &#8249;
+              </button>
+            
+              <button class="carousel-arrow carousel-arrow--next" onclick="handleCarouselMove()">
+                &#8250;
+              </button>
+              
+              <div class="carousel-container" dir="ltr">
+                <div class="carousel-slide"><img src="../imagens/torre_eiffel.jpg" alt="Torre Eiffel" part="A icônica Torre Eiffel, símbolo de Paris, encanta com sua estrutura de ferro, proporcionando vistas deslumbrantes da cidade luz e arredores.">
+                </div>
+
+                <div class="carousel-slide"><img src="../imagens/Jardim_de_Luxemburgo.JPG" alt="Jardim de Luxemburgo" part= "Os Jardins de Luxemburgo, exuberantes e serenos, convidam à contemplação entre suas flores, estátuas e charmosos recantos, refletindo a beleza parisiense.">
+                </div>
+
+                <div class="carousel-slide"><img src="../imagens/arco-triunfo.jpg" alt="Arco do Triunfo" part="O Arco de Triunfo domina a avenida Champs-Élysées, honrando heróis militares e oferecendo panoramas memoráveis da vibrante Paris.">
+                </div>
+
+                <div class="carousel-slide"><img src="../imagens/museu_louvre.jpeg" alt="Museu do Louvre" part="O Museu do Louvre, palácio da arte, abriga tesouros históricos e obras-primas, destacando-se como uma joia cultural no coração de Paris.">
+                </div>
+
+                <div class="carousel-slide"><img src="../imagens/catedral-notre-dame.jpg" alt="Catedral de Notre-Dame" part="A grandiosa Catedral de Notre-Dame, com sua arquitetura gótica magnífica, é um marco imortal da fé e da história francesa.">
+                </div>
+
+                <div class="carousel-slide"><img src="../imagens/rio-sena.webp" alt="Rio Sena" part="As águas serenas do Rio Sena serpenteiam por Paris, testemunhando séculos de história e emoldurando a cidade com sua tranquilidade cativante.">
+                </div>
+
+              </div>
+            </div>
+            <p id="infoturismo">
+            </p>
+            <div class="botao-mapa">
+                <button id="buttonmaps" value=""><img src="../imagens/logomaps.png" class="maps"></a></button>
+            </div>
+
+                <p>
+                    Selecione o ponto turístico que você deseja
+                </p>
+
+                <div class="turismo">
+
+                        <button id="torrebotao" value="torre">Torre Eiffel</button>
+                    
+                        <button id="jardimbotao" value="jardim">Jardim de Luxemburgo</button>
+                    
+                        <button id="arcobotao" value="arco">Arco do Triunfo</button>
+                   
+                        <button id="museubotao" value="museu">Museu do Louvre</button>
+                   
+                        <button id="catedralbotao" value="catedral">Catedral de Notre-Dame</button>
+                    
+                        <button id="senaboato" value="sena">Rio Sena</button>
+
+                </div>
+        </article>
+    </section>
+
+    <section class="conteudo">
+        <article>
+            <h2>
+                Um dos monumentos mais conhecidos do mundo
+            </h2>
+
+            <img src="../imagens/torre-eiffel2.0.jpg" class="eiffel">
+            <div class="fundo-eiffel">
+            <p id="text-eiffel">
+                &nbsp;&nbsp;&nbsp;A Torre Eiffel, construída por Gustave Eiffel e concluída em 1889 para a Exposição Universal de Paris, é um ícone emblemático da cidade. Projetada como o ponto focal do evento comemorativo do centenário da Revolução Francesa, esta estrutura de ferro com 324 metros de altura se tornou uma obra-prima da engenharia e um símbolo global de elegância.<br>
+                Apesar da resistência inicial de alguns setores, a Torre Eiffel provou seu valor ao longo do tempo, destacando-se não apenas por sua impressionante arquitetura, mas também por sua função prática como antena de transmissão de rádio. Sua preservação como um marco parisiense e atração turística de renome mundial demonstram como essa estrutura arrojada transcendeu sua origem na Exposição Universal para se tornar um elemento fundamental na identidade de Paris.
+            </p>
+        </div>
+        </article>
+    </section>
+
+    <script src="../js/paris2.js"></script>
+    </main>
+    <footer>
+
+        <span>
+            Direitos reservados BlueMoonStudios&copy; 2023
+        </span>
+
+        <div class="redes_container">
+                <a href="https://twitter.com/ShadowDark500" class="rede" id="twitter">
+                    <img src="../imagens/twitter.png" alt="" class="redes_logo">
+                </a>
+                <a href="https://www.instagram.com/raul_soares_moreira/" class="rede" id="instagram">
+                    <img src="../imagens/instagram.webp" alt="" class="redes_logo">
+                </a>
+                <a href="https://github.com/Sr-Darkzinho2500" class="rede" id="github">
+                    <img src="../imagens/github.png" alt="" class="redes_logo">
+                </a>
+            </div>
+
+    </footer>
+</body>
+</html>
